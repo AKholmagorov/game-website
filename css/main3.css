@@ -1,0 +1,8 @@
+/* html, body {
+  height: 100%;
+} */
+
+.main-content a:hover {
+  transition: 0.2s;
+  filter: invert(75%);
+}

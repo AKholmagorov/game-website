@@ -1,0 +1,94 @@
+/* Header */
+nav span {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 12px;
+}
+
+header nav img {
+  padding: 5px;
+  max-height: 40px;
+  transition-duration: 0.2s;
+}
+
+header nav img:hover {
+  filter: brightness(0.6);
+  transition: 0.2s;
+}
+
+/* Content */
+.card img {
+  height: 300px;
+}
+
+.main-content {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("pen.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+.card img {
+  transition: filter 0.2s;
+}
+.card:hover img {
+  filter: brightness(0.6);
+  transition: 0.3s;
+}
+.card-title {
+  text-decoration: none;
+}
+
+.card1 img {
+  transition: 0.2s;
+}
+.card1:hover img {
+  filter: contrast(200%);
+  transition: 0.5s;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer nav img {
+  max-height: 100px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer nav {
+  min-height: 125px;
+  padding: 0px 25px 0px 25px;
+}
